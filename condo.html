@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nominton Park</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar1">
+        <a class="h" href="index.html">Back</a>
+        <img class="logo" src="photo/general/dara real estate.png" alt="logo" style="width:10%;">
+    </div>
+    <div class="cn">
+        <h1 class="uvc">URBAN VILLAGE CONDOMINUM -2 bedroom </h1>
+    </div>
+    <br>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="photo/Condo photo/f.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/k.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/lr.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/lrk.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/rb.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/rb1.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/sb.JPG" style="width:100%">
+        <img class="mySlides" src="photo/Condo photo/fp.jpg" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    </div>
+    <div class="info">
+        <div class="row">
+            <div class="column">
+                <ul>
+                    <h2>SPECIFICATION</h2>
+                    <li>Staring $121,000+</li>
+                    <li>56 sqm</li>
+                    <li>2 bedroom </li>
+                    <li>1 kitchen</li>
+                    <li>1 living room </li>
+                    <li>1 bathroom </li>
+                    <li>1 balcony</li>
+                    <li>1 parking spaces</li>
+            </div>
+            <div class="column">
+                <ul>
+                    <h2>FEATURES</h2>
+                    <li>45% green space</li>
+                    <li>3000 sqm retail space </li>
+                    <li>1500 sqm community space </li>
+                    <li>Restaurants </li>
+                    <li>Cafes </li>
+                    <li>Grocery stores </li>
+                    <li>Access to the city’s biggest creative hub, Factory Phnom Penh </li>
+                    <li>Swimming pool </li>
+                    <li>Soccer field </li>
+                    <li>Basketball field</li>
+                    <li>Skateboarding park </li>
+                    <li>Trampoline park </li>
+                    <li>Art gallery </li>
+                    <li>German handicraft brewery </li>
+                    <li>608 car parking space and 238 motorbike parking space</li>
+            </div>
+            <div class="column">
+                <ul>
+                    <h2>SURROUNDINGS</h2>
+                    <li><span style="font-weight: 400;">Phnom Penh International School </span> <span
+                            style="color: rgb(151, 1, 1);"> – 1 min drive </span></li>
+                    <li><span style="font-weight: 400;">Royal University of Law and Economics </span> <span
+                            style="color: rgb(151, 1, 1);"> – 5 mins drive </span></li>
+                    <li><span style="font-weight: 400;">BKK1 and Embassy Zone </span> <span
+                            style="color: rgb(151, 1, 1);"> – 8 mins drive </span></li>
+                    <li><span style="font-weight: 400;">Aeon Mall 1 </span><span style="color: rgb(151, 1, 1);"> – 10
+                            mins drive </span></li>
+                    <li><span style="font-weight: 400;">Naga World 1, 2 &amp; 3 </span> <span
+                            style="color: rgb(151, 1, 1);"> – 12 mins drive </span></li>
+                    <li><span style="font-weight: 400;">Phnom Penh New International Airport </span> <span
+                            style="color: rgb(151, 1, 1);"> – 20 mins drive </span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="about">
+        <h2>MONT DEVELOPMENT</h2>
+        <p>For more information:</p>
+        <p class="ft">Building #138, Norodom Blvd, Sangkat Tonle Bassac, Khan Chamka Morn, Phnom Penh, Cambodia.</p>
+        <a class="btt" href="tel:011234456">Call us at +885 12 345 678</a><br>
+        <a class="btt" href="mailto:info.montdev@fakemail.com">notrealmail@gmail.com</a>
+        <hr>
+        <p class="ft">2021 All rights reserved. MONT DEVELOPMENT</p>
+    </div>
+</body>
+
+</html>
